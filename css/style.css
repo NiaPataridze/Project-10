@@ -1,0 +1,62 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+    background-color: #DDDDDD;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 40px 3fr 40px 1fr 40px;
+    grid-template-rows: 140px 109px 446px 40px 86px 204px;
+    grid-template-areas: 
+    "header header header header header header"
+    "aside . title . . ."
+    "aside . overview . products ."
+    "aside . . . . ."
+    "aside . income . . ."
+    "aside . income . comments ."
+    ;
+}
+header{
+    background: #ffffff;
+    border-radius: 50px 50px 0px 0px;
+    grid-area: header;
+}
+
+aside{
+    background: #ffffff;
+    border-radius: 0px 0px 0px 50px;
+    grid-area: aside;
+}
+
+.title{
+    font-size: 40px;
+    line-height: 49px;
+    color: black;
+    grid-area: title;
+    margin-top: 20px;
+}
+
+.overview{
+    background: #ffffff;
+    border-radius: 50px;
+    grid-area: overview;
+}
+
+.products{
+    background: #ffffff;
+    border-radius: 50px;
+    grid-area: products;
+}
+
+.income{
+    background: #ffffff;
+    border-radius: 50px 50px 0px 0px;
+    grid-area: income;
+}
+
+.comments{
+    background: #ffffff;
+    border-radius: 50px 50px 0px 0px;
+    grid-area: comments;
+}
